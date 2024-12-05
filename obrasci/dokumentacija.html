@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <head>
+        <title>Dokumentacija</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/asaric.css" type="text/css"/>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <script src="../javascript/javascript.js"></script>
+        <script src="../javascript/jquery.js"></script>
+        </head>
+    <body>
+        <body id="bodybody">
+        <header id="head"> 
+             <div class="head">
+                 <a href="#bodybody">
+                     <img src="../materijali/menu.png" alt="navigacija" id="navigacija"></a>
+                     <a href="#head">
+                         <img src="../materijali/logo.png"  alt="logo" id="logo">  </a>
+            <a id="Registracija" href="../stranice/registracija.php"><p>Registracija</p></a>
+            <a id="Prijava" href="../stranice/prijava.php"><p>Prijava</p></a>
+  
+             </div>
+        </header>
+         <nav>
+             <ul>
+                <li><a id="pocetna" href="../index.php">Početna stranica</a></li>
+                <li><a id="ranglista" href="../stranice/rang_lista.php">Rang lista korisnika</a></li>
+                <li><a id="galerija" href="../stranice/galerija.php">Galerija slika</a></li>
+                <li><a id="ispiskorisnikaa" href="../privatno/ispis_korisnika.php">Popis svih korisnika</a></li>
+                 <li><a id="dokumentacija" href="dokumentacija.html">Dokumentacija</a></li>
+                 <li><a id="oautoru" href="oautoru.html">O autoru</a></li>
+                </ul>
+            </nav>
+        <h1>Dokumentacija: </h1>
+        <div id="dokumentacija">
+            <h2>Opis projektnog zadatka</h2>
+            <p>
+                Projektni zadatak je bio napraviti sustav koji upravlja utrkama trčanja i praćenje svojih rezultata. U projektu imamo 4 vrste korisnika, ž
+                odnosno njihovih uloga a to su neregistrirani korisnik, registrirani korisnik, moderator i administrator. Uloge korisnika gledamo na način da administrator
+                može sve što neregistrirani i registrirani korisnik te moderator no ne vrijedi obrnuto. Isto vrijedi i za ostale uloge. <br><br>
+                Neregistrirani korisnik ima mogućnost pregleda rang liste korisnika te pregleda galerije slika pobjednika te filtriranje galerije.<br><br>
+                Registrirani korisnik ima mogućnost prijave utrke na način da može vidjeli utrke koje će se u budućnosti odvijati te ih može prijaviti. Uz to vidi popis 
+                svojih prijava na utrke koje se još nisu odvile te pri tome može ažurirati svoju prijavu ili ju obrisati. Također, ima uvid u svoje završene utrke te u statistiku 
+                svojih završenih etapa po državama.<br><br>
+                Moderator ima mogućnost kreiranja, ažuriranja i pregleda etapa koje se odnose na državu za koju je zadužen. Pri kreiranju i/li ažuriranju etapa 
+                moderator unosi datum i vrijeme početka utrke. Ima uvid u popis utrka u državama za koje je zadužen te može zaključati utrku ako su sve etape te utrke zaključane te
+                može objaviti pobjednika utrke. Ima uvid u popis prijavljenig korisnika za svoje etape te može evidentirati vremena korisnika i zaključati etapu ako je za svakog prijavljenog
+                korisnika uneseno vrijeme ili je evidentirano da je korisnik odustao. Također, ima uvid u statistiku korisnika koji su/ nisu završili utrku grupirano po etapi.<br><br>
+                Administrator kreira, ažurira i ima uvid u države u kojima se odvijaju utrke. Također, kreira, ažurira i pregledava utrke na koje se korisnici mogu prijaviti ili su već
+                odrađene. Administrator dodjeljuje države moderatorima na način da jedan moderator može biti zadužen za više država, te jedna država može imati više moderatora.<br><br>
+            </p>
+            <h2>Opis projektnog rješenja</h2>
+            <p>
+                Neregistrirani korisnik ima pristup stranicama koje sadrže rang listu korisnika te galeriju pobjednika utrka. Također, imaju pristup popisu korisnika ako imaju
+                odgovarajuću lozinku. Također, neregistrirani korisnici se mogu registrirati kako bi imali mogućnost pregleda više funkcionalnosti sustava. Nakon što su unijeli sve
+                svoje podatke ne mogu se prijaviti dok ne aktiviraju e-mail adresu pomoću koda poslanog na njihovu e-mail adresu. Prijava u sustav se vrši preko HTTPS- a te korisnik ima
+                mogućnost odabrati opciju "Zapamti me" koja omogućuje automatski unos korisničkog imena prilikom sljedeće prijave u sustav. Registrirani korisnik sadrži funkcionalnosti 
+                opisane u projektnom zadatku te funkcionalnosti neregistriranog korisnika. Moderator sadrži funkcionalnosti opisane u projektnom zadatku te funkcionalnosti neregistriranog i
+                registriranog korisnika. Administrator sadrži funkcionalnosti opisane u projektnom zadatku te funckionalnosti neregistriranog i registriranog korisnika te moderatora.
+                Uz to administrator ima mogućnost uvida i pretraživanja dnevnika, konfiguriranje postavki aplikacije kao što je straničenje, broj neuspješnih prijava i slično. Uz to,
+                administrator ima uvid u statistiku rada sustava.
+            </p>
+            <p>
+               <h2>Skripte</h2> 
+               <h4>CSS</h4>
+               asaric.css  -  dizajn stranica i responzivan dizajn<br>
+               <h4>Javascript</h4>
+               javascript.js  -  validacija klijent i recaptcha<br>
+               <br> jquery.js  -  popunjavanje tablica, sortiranje i pretraživanje tablica<br>
+               <h4>Privatno</h4>
+               ispis_korisnika.php  -  prikaz popisa svih korisnika<br>
+               <br> ispis_korisnika_prikaz.php  -  dohvaćanje podataka o korisnicima iz mysql baze podataka<br>
+               
+               <h4>Stranice</h4>
+               azuriranje_drzava.php  -  ažuriranje država, otvara se pritiskom na red u tablici na stranici popis_drzava.php<br>
+               <br> azuriranje_etapa.php  -  ažuriranje etapa, otvara se pritiskom na red u tablici na stranici popis_etapa.php<br>
+               <br> azuriranje_utrka.php  -  ažuriranje utrka, otvara se pritiskom na red u tablici na stranici popis_svih_utrka.php<br>
+               <br> bodovno_stanje.php  -  prikaz ukupnog bodovnog stanja svih etapa po korisnicima<br>
+               <br> bodovno_stanje_prikaz.php  -  dohvaćanje podataka o bodovnom stanju iz baze podataka<br>
+               <br> brisanje_etape.php  -  prikaz etape koju smo odabrali na stranici popis_etapa.php te odustajanje od utrke kojoj ta etapa pripada<br>
+               <br> dnevnik_rada.php  -  prikaz podataka iz tablice dnevnik rada<br>
+               <br> dnevnik_rada_korisnici.php  -  dohvaćanje podataka o korisničkim imenima iz baze podataka<br>
+               <br> dnevnik_rada_prikaz.php  -  dohvaćanje podataka o dnevniku rada iz baze podataka<br>
+               <br> dodjeli moderatora.php  -  prikaz forme za dodjelu moderatora odabrane države<br>
+               <br> dodjeli_moderatora_prikaz_korisnika.php  -  dohvaćanje korisničkih imena korisnika koji su moderatori<br>
+               <br> evidencija_vremena.php  -  evidencija vremena korisnika za izabranu etapu te zaključavanje odabrane etape<br>
+               <br> galerija.php  -  prikaz galerije slika korisnika pobjednika utrka<br>
+               <br> galerija_popis_drzava.php  -  dohvaćanje naziva država iz tablice države iz baze podataka<br>
+               <br> galerija prikaz.php  -  dohvaćanje galerije slika korisnika pobjednika utrka iz baze podataka<br>
+               <br> galerija_sort_ime.php  -  dohvaćanje sortiranih podataka prema imenu za prikaz galerije korisnika pobjednika utrka<br>
+               <br> galerija_sort_prezime.php  -  dohvaćanje sortiranih podataka prema prezimenu za prikaz galerije korisnika pobjednika utrka<br>
+               <br> index.php  -  početna stranica<br>
+               <br> kreiranje_drzave.php  -  unos nove države u bazu podataka<br>
+               <br> kreiranje_etape.php  -  unos nove etape u bazu podataka<br>
+               <br> kreiranje_prijave.php  -  unos nove prijave u bazu podataka<br>
+               <br> kreiranje_utrka.php  -  unos nove utrke u bazu podataka<br>
+               <br> nove_utrke.php  -  prikaz utrka za koje još nije zatvorena prijava<br>
+               <br> nove_utrke_prikaz.php  -  dohvaćanje utrka za koje još nije zatvorena prijava<br>
+               <br> objavi_pobjednika.php  - objava pobjednika utrke<br>
+               <br> odjava.php  -  odjava iz sustava<br>
+               <br> popis_drzava.php  -  prikaz popisa drzava iz baze podataka<br>
+               <br> popis_drzava_prikaz.php  -  dohvaćanje podataka o drzavama iz baze podataka<br>
+               <br> popis_etapa.php  -  prikaz popisa etapa odabrane utrke iz baze podataka<br>
+               <br> popis_etapa_prikaz.php  -  dohvaćanje podataka o etapi odabrane utrke iz baze podataka<br>
+               <br> popis_odradenih_utrka.php  -  prikaz popisa odtrčanih utrka prijavljenog korisnika<br>
+               <br> popis_svih_etapa.php  -  prikaz popisa etapa određenog moderatora iz baze podataka<br>
+               <br> popis_svih_etapa_prikaz.php  -  dohvaćanje podataka o etapama određenog moderatora iz baze podataka<br>
+               <br> popis_svih_utrka.php  -  prikaz popisa utrka iz baze podataka<br>
+               <br> popis_svih_utrka_prikaz.php  -  dohvaćanje podataka o utrkama iz baze podataka<br>
+               <br> popis_utrka_etapa.php  -  prikaz popisa utrka za koje je modeator zaduzeniz baze podataka<br>
+               <br> popis_utrka_moderator_prikaz.php  -  dohvaćanje podataka o utrkama za koje je moderator zadužen iz baze podataka<br>
+               <br> prijava.php  -  prijava korisnika u sustav<br>
+               <br> rang lista.php  -  prikaz rang liste svih korisnika<br>
+               <br> rang_lista_prikaz.php  -  dohvaćanje podataka rang liste korisnika iz baze podataka<br>
+               <br> registracija.php  - registracija neregistriranog korisnika<br>
+               <br> registracija_provjera.php  -  provjera je li odabrano korisničko ime ili mail neregistriranog korisnika već postoje u bazi podataka<br>
+               <br> statistika etapa.php  -  prikaz statistike etapa <br>
+               <br> statistika_etapa_graf.php  -  dohvaćanje podataka o etapama iz baze podataka kako bi se nacrtao graf<br>
+               <br> statistika_etapa_prikaz.php  -  dohvaćanje podataka iz baze podataka o etapama<br>
+               <br> statistika_etapa_sort_bodovi.php  -  dohvaćanje sortiranih bodova za statistiku etapa iz baze podataka<br>
+               <br> statistika_etapa_sort_kontinent.php  -  dohvaćanje sortiranih kontinenata za statistiku etapa iz baze podataka<br>
+               <br> statistika_utrka.php  -  prikaz statistike utrka <br>
+               <br> statistika_utrka_graf.php  -  dohvaćanje podataka o utrkama iz baze podataka kako bi se nacrtao graf<br>
+               <br> statistika_utrka_prikaz.php  -  dohvaćanje podataka iz baze podataka o utrkama<br>
+               <br> statistika_utrka_sort_naziv.php  -  dohvaćanje sortiranih naziva utrka za statistiku utrka iz baze podataka<br>
+               <br> statistika_utrka_sort_uspjeh.php  -  dohvaćanje sortiranih uspjesno zavrsenih utrka za statistiku utrka iz baze podataka<br>
+               <br> tip_utrka_prikaz.php  -  dohvaćanje podataka o tipu utrka kod kreiranja nove utrke<br>
+               <br> trenutne_utrke.php  -  prikaz popisa trenutno prijavljenih utrka korisnika iz baze podataka<br>
+               <br> trenutne_utrke_prikaz.php  -  dohvaćanje podataka o trenutno prijavljenim utrkama korisnika iz baze podataka<br>
+               <br> zavrsene_utrke.php  -  prikaz popisa zavrsenih utrka korisnika iz baze podataka<br>
+               <br> zavrsene_utrke_prikaz.php  -  dohvaćanje podataka zavrsenih utrka korisnika iz baze podataka<br>
+               
+               <h4>Templates</h4>
+               azuriranje_drzava.tpl  -  ažuriranje država, otvara se pritiskom na red u tablici na stranici popis_drzava.php<br>
+               <br> azuriranje_etapa.tpl  -  ažuriranje etapa, otvara se pritiskom na red u tablici na stranici popis_etapa.php<br>
+               <br> azuriranje_utrka.tpl -  ažuriranje utrka, otvara se pritiskom na red u tablici na stranici popis_svih_utrka.php<br>
+               <br> bodovno_stanje.tpl -  prikaz ukupnog bodovnog stanja svih etapa po korisnicima<br>
+               <br> brisanje_etape.tpl  -  prikaz etape koju smo odabrali na stranici popis_etapa.php te odustajanje od utrke kojoj ta etapa pripada<br>
+               <br> dnevnik_rada.tpl  -  prikaz podataka iz tablice dnevnik rada<br>
+               <br> dodjeli moderatora.tpl  -  prikaz forme za dodjelu moderatora odabrane države<br>
+               <br> evidencija_vremena.tpl  -  evidencija vremena korisnika za izabranu etapu te zaključavanje odabrane etape<br>
+               <br> galerija.tpl  -  prikaz galerije slika korisnika pobjednika utrka<br>
+               <br> index.tpl  -  prikaz rotacije slika na početnoj stranici<br>
+               <br> ispis_korisnika.tpl  -  prikaz popisa ksvih korisnika sustava (privatno)<br>
+               <br> kreiranje_drzave.tpl  -  prikaz forme za unos nove države u bazu podataka<br>
+               <br> kreiranje_etape.tpl  -  prikaz forme zaunos nove etape u bazu podataka<br>
+               <br> kreiranje_prijave.tpl  -  prikaz forme za unos nove prijave u bazu podataka<br>
+               <br> kreiranje_utrka.tpl  -  prikaz forme za unos nove utrke u bazu podataka<br>
+               <br> nove_utrke.tpl  -  prikaz utrka za koje još nije zatvorena prijava<br>
+               <br> objavi_pobjednika.tpl  - objava pobjednika utrke<br>
+               <br> podnozje.tpl  -  prikaz podnozja stranice<br>
+               <br> popis_drzava.tpl  -  prikaz popisa drzava iz baze podataka<br>
+               <br> popis_etapa.tpl  -  prikaz popisa etapa odabrane utrke iz baze podataka<br>
+               <br> popis_odradenih_utrka.tpl  -  prikaz popisa odtrčanih utrka prijavljenog korisnika<br>
+               <br> popis_svih_etapa.tpl  -  prikaz popisa etapa određenog moderatora iz baze podataka<br>
+               <br> popis_svih_utrka.tpl  -  prikaz popisa utrka iz baze podataka<br>
+               <br> popis_utrka_etapa.tpl  -  prikaz popisa utrka za koje je modeator zaduzeniz baze podataka<br>
+               <br> prijava.tpl  -  prikaz forme za prijavu korisnika u sustav<br>
+               <br> rang lista.tpl  -  prikaz rang liste svih korisnika<br>
+               <br> registracija.tpl  - prikaz forme za registraciju neregistriranog korisnika<br>
+               <br> statistika etapa.tpl  -  prikaz statistike etapa <br>
+               <br> statistika_utrka.tpl  -  prikaz statistike utrka <br>
+               <br> trenutne_utrke.tpl  -  prikaz popisa trenutno prijavljenih utrka korisnika iz baze podataka<br>
+               <br> zavrsene_utrke.tpl  -  prikaz popisa zavrsenih utrka korisnika iz baze podataka<br>
+            </p>
+            <p>
+               <h2>Vanjski izvori</h2> 
+               <br> smarty-4.0.0  -  biblioteka za korištanje smarty predložaka u projektu<br>
+               <br> g- Recaptcha -  provjera zbog sprječavanja automata: https://www.google.com/recaptcha/api.js<br>
+               <br> jquery -  jQuery biblioteka: https://code.jquery.com/jquery-3.6.0.min.js<br>
+               <br> jquery -  jQuery biblioteka za crtanje grafova: https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js <br>
+               <br> baza.php -  klasa za povezivanje s bazom podataka te slanja upita bazi<br>
+               <br> sesija.php -  klasa za rad sa sesijom<br>
+               <br> zaglavlje.php -  php file za rad sa smarty predloškom, sesijom i kolačićima <br>
+            </p>
+            
+            <p>
+               <h2>Korišteni alati</h2> 
+               <br> Draw.io -  crtanje dijagrama<br>
+               <br> MySQL Workbench -  izrada ERA modela<br>
+               <br> phpMyAdmin -  baza podataka<br>
+               <br> NetBeans IDE 10.0 -  pisanje koda i izrada projekta <br>
+               <br> FileZilla -  prijenos podataka na poslužitelj<br>
+            </p>
+            
+            <div class="navigacijski">
+                <h2>Navigacijski dijagram</h2> 
+            <a href="../dokumenti/asaric_navigacijski_dijagram.drawio.png" >
+                <img alt="Navigacijski dijagram" src="../dokumenti/asaric_navigacijski_dijagram.drawio.png" width="200" height="200">
+            </a>
+         </div>
+            <h2>ERA model</h2> 
+             <div class="era">
+            <a href="../dokumenti/asaric_ERA.png" >
+                <img alt="ERA model" src="../dokumenti/asaric_ERA.png" width="200" height="200">
+            </a>
+        </div>
+        </div>
+    </body>
+</html>

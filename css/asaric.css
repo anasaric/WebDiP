@@ -1,0 +1,327 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : May 21, 2022, 3:15:34 PM
+    Author     : WebDiP_03
+*/
+
+#bodybody{
+   background-color: #DDF6D5;
+}
+
+h1{
+    text-align: center;
+}
+
+#dokumentacija{
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.navigacijski, .era{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.head{
+    position: fixed;
+    width: 100%;
+    background-color: #DDF6D5;
+}
+
+
+#navigacija{
+    float: left;
+    width: 70px;
+    height: 90px;
+}
+
+
+#Registracija, #Prijava, #Odjava{
+    float: right;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: black;
+    margin: 10px;
+    background-color: #84C550;
+    text-decoration: none;
+}
+
+table#drzavetablica, #oautoru,table#prijavetablica, table#ispiskorisnika, table#dnevniktablica, table#ranglistatablica, #formarangliste, table#galerijatablica, table#noveutrketablica, table#trenutneutrketablica, table#etapetablica, table#zavrseneutrketablica, table#utrkeetapetablica, table#bodovnostanjetablica, table#sveetapetablica, table#statistikautrkatablica,#formastatistikaetapa, #formstatistika, table#statistikaetapatablica, #formamoderator, table#utrketablica{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media print{
+    header *{
+        visibility: hidden;
+    }
+    nav *{
+        visibility: hidden;
+    }
+    footer * {
+        visibility: hidden;
+    }
+    button *{
+        visibility: hidden;
+    }
+    
+    form *{
+        visibility: hidden;
+    }
+}
+
+#chart{
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#novimail{
+    color: black;
+}
+
+#logo{
+    height: 100px;
+    width: 220px;
+    float: left;
+    
+}
+
+nav{
+    float: left;
+    background-color: #84C550;
+    border-radius: 10px;
+    color: #F6F6E7;
+    width: 250px;
+    line-height: 2;
+    font-size: 20px;
+    padding: 25px;
+    margin-top: 100px;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+#head{
+    height: 120px;
+}
+
+#head:target>nav{
+    display:none;
+}
+
+nav{
+    display: none;
+}
+
+#bodybody:target>nav{
+    display:block;
+}
+
+label:hover{
+    font-size: large;
+    color: brown;
+}
+
+label{
+    line-height: 20px;
+    font-style: normal;
+}
+
+#box{
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;  
+    padding: 150px;
+    border-radius: 10px;
+}
+
+#box img{
+    position: absolute;
+    opacity: 0;
+    height: 500px;
+    width: 900px;
+    animation: fade 20s infinite;
+    border-radius: 10px;
+}
+
+#box .slika1 {
+    animation-delay: 0s;
+}
+
+#box .slika2 {
+    animation-delay: 5s;
+}
+
+#box .slika3 {
+    animation-delay: 10s;
+}
+#box .slika4 {
+    animation-delay: 15s;
+}
+
+@keyframes fade {
+    0% {opacity: 0;}
+    25% {opacity: 1;}
+    50% {opacity: 0;}
+}
+
+.grid{
+    padding: 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.grid1{
+    width: 700px;
+    height: 500px;
+    padding-bottom: 100px;
+    border-radius: 10px;
+}
+
+.grid1 img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    box-shadow: 5px 5px #DCDCDC;
+    border-radius: 10px;
+}
+
+.grid2{
+    background-color: #84C550;
+    box-shadow: 5px 5px #DCDCDC;
+    border-radius: 10px;
+    width: 500px;
+    height: 600px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#formprijava, #formregistracija{
+    border-color: black;
+    border-style: solid;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#formdrzava, #formetapa, #formprijavautrke, #formutrka, #formunos, #formagalerija, #formazavrseneutrke{
+    text-align: center;
+}
+
+#profil, #postavke{
+    float: right;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    height: 50px;
+    width: 50px;
+}
+
+#postavke img{
+    height: 50px;
+    width: 50px;
+}
+
+#profil{
+    height: 50px;
+    width: 50px;
+}
+
+#novadrzava, #novautrka{
+    padding: 20px;
+    height: 60px;
+    width: 90px;
+    background-color: #84C550;
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+    text-align: center;
+    text-decoration: none;
+    float: right;
+}
+
+@media only screen AND (min-width: 510px ) AND (max-width: 820px){
+#box{
+    width: 550px;
+    height: 500px;
+}
+
+#box img{
+    height: 550px;
+    width: 450px;
+}
+
+.grid{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto;
+}
+.grid1{
+    width: 550px;
+    height: 500px;
+    padding-bottom: 50px;
+}
+
+.grid2{
+    width: 400px;
+    height: 470px;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+}
+
+@media only screen AND (min-width: 390px ) AND (max-width: 500px){
+#box{
+    width: 400px;
+    height: 500px;
+
+}
+
+#box img{
+    height: 400px;
+    width: 450px;
+}
+
+.grid{
+    padding: 0px;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.grid1{
+        margin-top: 100px;
+    width: 400px;
+    height: 500px;
+    padding-bottom: 50px;
+}
+
+.grid2{
+    width: 400px;
+    height: 470px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#logo{
+    visibility: hidden;
+}
+}
+
+
+
+
+
+

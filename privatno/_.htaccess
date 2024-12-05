@@ -1,0 +1,4 @@
+AuthType Basic
+AuthUserFile /var/www/webdip.barka.foi.hr/2021_projekti/WebDiP2021x131/asaric/privatno/user.txt
+AuthName "Administracija sustava, ispis korisnika"
+Require valid-user
